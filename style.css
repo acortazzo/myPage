@@ -309,6 +309,8 @@ p{
     height: 300px;
     overflow: hidden;
     position: relative;
+   
+   
 }
 
 #proyects .proyect-img::after{
@@ -325,6 +327,11 @@ p{
 
 #proyects .proyect-img img{
     transition: .3s ease transform;
+    /* agregados por mi para que la imagen no se distorcione */
+    height: 100%; 
+    width: 100%;
+    object-fit: contain;
+  
 }
 
 #proyects .proyects-item:hover .proyect-img img{
